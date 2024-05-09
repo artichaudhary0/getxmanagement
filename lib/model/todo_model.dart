@@ -13,7 +13,7 @@ class ToDoModel {
 
   ToDoModel.fromJson(dynamic json) {
     _createdAt = json['createdAt'];
-    _description = json['Description'];
+    _description = json['description'];
     _avatar = json['avatar'];
     _id = json['id'];
   }
@@ -41,7 +41,7 @@ class ToDoModel {
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
     map['createdAt'] = _createdAt;
-    map['Description'] = _description;
+    map['description'] = _description;
     map['avatar'] = _avatar;
     map['id'] = _id;
     return map;
